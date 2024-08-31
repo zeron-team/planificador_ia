@@ -28,5 +28,9 @@ project_name/
 -   ```text
     pip install -r requirements.txt
     ```
+  - luego
+  - ```text
+    pip install --upgrade flask werkzeug
+    ```
 
 
