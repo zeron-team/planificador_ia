@@ -22,6 +22,7 @@ project_name/
 ├── config.py
 ├── requirements.txt
 └── run.py
+
 ```
 ## Requerimientos --> Requirements.txt
 -   ```text
