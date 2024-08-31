@@ -1,39 +1,189 @@
+/* Estilos generales */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #dcdcdc;
 }
 
 .container {
-    max-width: 600px;
-    margin: auto;
-    background: #fff;
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 1.8rem;
 }
 
-select, input[type="text"] {
-    width: 100%;
-    padding: 10px;
+h3 {
+    color: #007bff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+ul, ol {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+ul ul, ol ol {
+    margin-left: 20px;
+    list-style-type: circle;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.result div {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+strong {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Estilos para botones y checkbox */
+.button-group button, .level-buttons button, .grade-buttons button {
+    background-color: #ccc; /* Color gris por defecto */
+    color: #333;
+    border: 1px solid #bbb;
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem; /* Tamaño pequeño */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button-group button.selected, .level-buttons button.selected, .grade-buttons button.selected {
+    background-color: #007bff; /* Color azul cuando está seleccionado */
+    color: white;
+    border: none;
+}
+
+.button-group button:hover, .level-buttons button:hover, .grade-buttons button:hover {
+    background-color: #007bff; /* Cambia a azul al pasar el mouse */
+    color: white;
+}
+
+input[type="checkbox"] {
+    accent-color: #007bff; /* Color azul para el checkbox cuando está seleccionado */
+}
+
+.main-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 300px; /* Ajusta según el diseño deseado */
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #ddd;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Estilos para logo y footer */
+.logo-header {
+    height: 50px;
+    margin-right: 15px;
+    float: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo-footer {
+    height: 40px;
+}
+
+/* Estilos para layout de formulario */
+.form-group-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5%;
     margin-bottom: 20px;
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #28a745;
-    color: #fff;
-    border: none;
-    cursor: pointer;
+.duration-group, .examples-group {
+    flex: 1;
+    max-width: 15%;
 }
 
-#result {
-    margin-top: 20px;
-    background-color: #e9ecef;
-    padding: 20px;
+.submit-button {
+    flex: 1;
+    max-width: 20%;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
 }

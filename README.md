@@ -13,8 +13,9 @@ project_name/
 │   ├── static/
 │   │   ├── css/
 │   │   │   └── styles.css
-│   │   ├── js/
-│   │   │   └── app.js
+│   │   └── js/
+│   │       ├── app.js
+|   |       └── tesauro.js   
 │   ├── templates/
 │   │   └── index.html
 │   ├── routes.py
